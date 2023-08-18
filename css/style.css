@@ -1,0 +1,162 @@
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+   
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: transparent;
+  }
+  body{
+    background: var(--secondary);
+   
+  }
+  h2{
+    color: var(--light);
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+ .main{
+    display: flex;
+    justify-content: center;
+    height: fit-content;   
+ }
+ #myTable{
+    width: 100%;
+ }
+ /* Override DataTables styles */
+ .dataTables_wrapper {
+    background-color: #fff5;
+    padding: 20px;
+  }
+
+  .dataTables_length label {
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .dataTables_filter input[type="search"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .dataTables_paginate .paginate_button {
+    background-color: red;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .dataTables_paginate .paginate_button:hover {
+    background-color: #ccc;
+  }
+
+  .dataTables_paginate .paginate_button.current {
+    background-color: #bbb;
+    font-weight: bold;
+  }
+
+  table.dataTable thead th,
+  table.dataTable thead td {
+    padding: 0px 0px;
+    border-bottom: none;
+    background-color: none;
+  }
+
+  /* Custom border-collapse and border-radius */
+  .dataTables_wrapper table.dataTable {
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+    border: 1px solid steelblue;
+    border-radius: 10px;
+    margin-top: 20px;
+
+  }
+
+  table.dataTable.no-footer {}
+
+  .dataTables_wrapper table.dataTable thead th,
+  .dataTables_wrapper table.dataTable tfoot th,
+  .dataTables_wrapper table.dataTable thead td,
+  .dataTables_wrapper table.dataTable tfoot td {
+    border-bottom: 1px solid steelblue;
+    padding: 8px;
+  }
+
+
+
+  .dataTables_wrapper table.dataTable tbody td {
+    min-width: 200px;
+    border-bottom: 1px solid steelblue;
+    border-left: 1px solid steelblue;
+    padding: 8px;
+    text-align: center
+  }
+
+  .dataTables_wrapper table.dataTable tbody tr :nth-child(1) {
+    border-left: none;
+
+  }
+
+  .dataTables_wrapper table.dataTable tbody tr:last-child td {
+    border-bottom: none;
+  }
+
+  .dataTables_wrapper .dataTables_paginate {
+    display: flex;
+  }
+
+  .dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 0px;
+    background-color: red;
+  }
+
+  .paginate_button.current,
+  .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    background-color: none;
+    background: none !important;
+    border-radius: 50% !important;
+  }
+
+  .careers_table {
+    width: 100%;
+    height: fit-content;
+    background: var(--light);
+    border-radius: 1rem;
+    overflow: hidden;
+  }
