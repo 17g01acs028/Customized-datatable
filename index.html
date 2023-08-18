@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.dataTables.min.css"
+    />
+  </head>
+  <body>
+    <h2>Responsive Customized Datatable</h2>
+    <div class="main">
+       
+      <div class="careers_table">
+        <table id="myTable" class="display responsive">
+          <thead>
+            <tr>
+              <th>R/No</th>
+              <th>Job</th>
+              <th>Job Description</th>
+              <th>Job Type</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>J001</td>
+              <td>Waiter</td>
+              <td style="width: 300px; font-size: 12px; font-weight: bold">
+                Waiters needed
+              </td>
+              <td>Full Time</td>
+             
+            </tr>
+            <tr>
+              <td>J001</td>
+              <td>Waiter</td>
+              <td style="width: 300px; font-size: 12px; font-weight: bold">
+                Waiters needed
+              </td>
+              <td>Full Time</td>
+             
+            </tr>
+            <tr>
+              <td>J001</td>
+              <td>Waiter</td>
+              <td style="width: 300px; font-size: 12px; font-weight: bold">
+                Waiters needed
+              </td>
+              <td>Full Time</td>
+             
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script>
+      $("#myTable").DataTable();
+    </script>
+    
+  </body>
+</html>
